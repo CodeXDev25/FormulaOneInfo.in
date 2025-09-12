@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+  font-family: "Audiowide", sans-serif;
+}
+
+/* utils */
+.algCen{
+  display: flex;
+  align-items: center;
+}
+
+.jusCen{
+  display: flex;
+  justify-content: center;
+}
+
+.algCenJusCen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+.navbar{
+  width: 1800px;
+  height: 96px;
+
+  padding: 12px 0;
+  gap: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-left{
+  width: 395px;
+  height: 90px;
+
+  padding: 3px 13px;
+}
+
+.F1Logo{
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.navbar-left-text{
+  color: #FFF;
+  font-family: "Audiowide", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.navbar-left-text:hover{
+  cursor: pointer;
+  color: #F91313;
+}
+
+.navbar-center{
+  width: 815px;
+  height: 32px;
+
+  padding: 18px 24px;
+  gap: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ulGap{
+  gap: 50px;
+}
+
+ul{
+  padding: 0  ;
+}
+
+ul > li{
+  color: #FFF;
+  font-family: Audiowide;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+ul > li:hover{
+  cursor: pointer;
+  color: #F91313;
+}
+
+.navbar-right{
+  width: 245px;
+  height: 50px;
+
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 25px;  
+}
+
+.logIn{
+  width: 100px;
+  height: 50px;
+  border: none;
+
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 7px;
+  background: #FFF;
+  transition: 0.8s;
+}
+
+.logIn > span{
+  width: 90px;
+  height: 31px;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: Audiowide;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  justify-content: start;
+}
+
+.logIn:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+  background: #F91313;
+}
+
+.signUp{
+  width: 120px;
+  height: 50px;
+  border: none;
+
+  display: flex;
+  padding: 10px;
+  align-items: flex-end;
+  gap: 10px;
+
+  border-radius: 7px;
+  background: #FFF;
+  transition: 0.8s;
+}
+
+.signUp > span{
+  width: 90px;
+  height: 31px;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: Audiowide;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  justify-content: start;
+}
+
+.signUp:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+  background: #F91313;
+}
+
+.hr > hr{
+  height: 3px;
+  background-color: #FFF;
+}
+
+.btns{
+  width: 20%;
+  height: auto;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.btns > button{
+  border: solid #FFF 4px;
+  background-color: #000;
+  color: #FFF;
+  border-radius: 12px;
+}
+
+.full-schedule{
+  display: flex;
+  width: 200px;
+  height: 60px;
+  padding: 19px 14px 18px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+.full-schedule:hover{
+  border: solid #F91313 4px;
+  background-color: #F91313;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.year{
+  display: flex;
+  width: 90px;
+  height: 60px;
+  padding: 11px 21px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+.year:hover{
+  border: solid #F91313 4px;
+  background-color: #F91313;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+

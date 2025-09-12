@@ -1,0 +1,333 @@
+.typography{
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.schedule-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px;
+}
+
+.schedule-heading > span{
+  color: #FFF;
+  height: auto;
+  font-size: 40px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.schedule-heading > span:hover{
+  color: #F91313;
+}
+
+.schedule{
+  width: 1830px;
+  height: 765px;
+  flex-shrink: 0;
+  
+  position: relative;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.frame-container{
+  width: 1830;
+  padding: 30px 0;
+  gap: 40px;
+  align-items: start;
+}
+
+.frame-1{
+  width: 520px;
+  height: 445px;
+  flex-shrink: 0;
+}
+
+.frame-1-heading{
+  width: 214px;
+  height: 71px;
+  flex-shrink: 0;
+
+  font-size: 40px;
+}
+
+.frame-1-image-div{
+  position: relative;
+}
+
+.frame-1-image{
+  width: 569px;
+  height: 370px;
+  flex-shrink: 0;
+  aspect-ratio: 553/311;
+
+  position: relative;
+  right: 52px;
+
+  opacity: 0.7;
+  clip-path: inset(0px 0px 0px 52px round 12px 12px);
+  transition: 0.4s;
+}
+
+.frame-1-image:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.frame-1-eventdetail{
+  width: 180px;
+  height: 100px;
+  flex-shrink: 0;
+
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.4s;
+}
+
+.frame-1-eventdetail:hover{
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.frame-1-roundno{
+  width: 106px;
+  height: 20px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+.frame-1-roundname{
+  width: 179px;
+  height: 39px;
+  flex-shrink: 0;
+
+  font-size: 35px;
+}
+
+.frame-1-rounddate{
+  width: 147px;
+  height: 25px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+.frame-2{
+  width: 570px;
+  height: 445px;
+  flex-shrink: 0;
+}
+
+.frame-2-heading{
+  width: 214px;
+  height: 71px;
+  flex-shrink: 0;
+
+  font-size: 40px;
+}
+
+.frame-2-image-div{
+  position: relative;
+}
+
+.frame-2-image{
+  width: 680px;
+  height: 370px;
+  flex-shrink: 0;
+
+  position: relative;
+
+  opacity: 0.7;
+  clip-path: inset(0px 115px 0px 0px round 12px 12px);
+  transition: 0.4s;
+}
+
+.frame-2-image:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.frame-2-eventdetail{
+  width: 180px;
+  height: 100px;
+  flex-shrink: 0;
+
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.4s;
+}
+
+.frame-2-eventdetail:hover{
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.frame-2-roundno{
+  width: 106px;
+  height: 20px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+.frame-2-roundname{
+  width: 179px;
+  height: 39px;
+  flex-shrink: 0;
+
+  font-size: 35px;
+}
+
+.frame-2-rounddate{
+  width: 147px;
+  height: 25px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+.frame-3{
+  width: 590px;
+  height: 445px;
+  flex-shrink: 0;
+}
+
+.frame-3-heading{
+  width: 214px;
+  height: 71px;
+  flex-shrink: 0;
+
+  font-size: 40px;
+}
+
+.frame-3-image-div{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frame-3-image-1{
+  width: 520px;
+  height: 370px;
+  flex-shrink: 0;
+
+  position: relative;
+
+  opacity: 0.7;
+  clip-path: inset(0px 0px 0px 0px round 12px 12px);
+  transition: 0.4s;
+}
+
+.frame-3-image-1:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.frame-3-image-2{
+  width: 351px;
+  height: 320px;
+  flex-shrink: 0;
+
+  position: relative;
+
+  opacity: 0.7;
+  clip-path: inset(0px 0px 0px 0px round 12px 12px);
+  transition: 0.4s;
+}
+
+.frame-3-image-2:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.frame-3-eventdetail-1{
+  width: 180px;
+  height: 100px;
+  flex-shrink: 0;
+
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.4s;
+}
+
+.frame-3-eventdetail-1:hover{
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.frame-3-eventdetail-2{
+  width: 180px;
+  height: 100px;
+  flex-shrink: 0;
+
+  top: 10px;
+  right: 160px;
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.4s;
+}
+
+.frame-3-eventdetail-2:hover{
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.frame-3-roundno{
+  width: 106px;
+  height: 20px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+.frame-3-roundname{
+  width: 179px;
+  height: 39px;
+  flex-shrink: 0;
+
+  font-size: 35px;
+}
+
+.frame-3-rounddate{
+  width: 147px;
+  height: 25px;
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
