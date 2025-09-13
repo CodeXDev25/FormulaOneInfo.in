@@ -1,14 +1,18 @@
-import React from "react";
-import axios from 'axios'
 import './Home.css'
 import './Main.css'
 import './Home-Schedule.css'
-import './backendDatafetchnUpdate'
 import F1Logo from '../../assets/logo.svg'
 import RArrow from '../../assets/home/RArrow.svg'
 import FOneImage from '../../assets/home/FOneCar.jpg'
+import { useNavigate } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({remainingEvents,loading,passedEvents}) => {
+  const navigate = useNavigate()
+  const evenDetailsClick = () => {
+    const loc = document.getElementById('js-frame-1-location').innerHTML.toLowerCase().replace(/\s+/g,"")
+    navigate(`/racing/details/${loc}`)
+  }
+  
   return(
     <>
       <div className="Home">
@@ -42,7 +46,7 @@ const Home = () => {
               <div className="frame-1-heading typography"><span>Previous</span></div>
               <div className="frame-1-image-div">
                 <img src="" alt="No Internet" className="frame-1-image" id="js-frame-1-image"/>
-                <div className="frame-1-eventdetail">
+                <div className="frame-1-eventdetail" onClick={evenDetailsClick}>
                   <div className="frame-1-roundno typography"><span>Round <span id="js-frame-1-roundno"></span></span></div>
                   <div className="frame-1-roundname typography"><span id="js-frame-1-location"></span></div>
                   <div className="frame-1-rounddate typography"><span><span id="js-frame-1-startdate"></span> - <span id="js-frame-1-enddate"></span> <span id="js-frame-1-month"></span></span></div>
