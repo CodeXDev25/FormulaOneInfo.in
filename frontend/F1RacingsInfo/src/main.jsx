@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/home/Home.jsx'
+import axios from 'axios'   
 
 const router = createBrowserRouter([
   {

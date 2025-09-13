@@ -6,6 +6,7 @@ from datetime import datetime
 import json
 
 todaysDateTime = datetime.now()
+currentYear = datetime.now().year
 
 app = Flask(__name__)
 CORS(app)
@@ -52,7 +53,7 @@ def healthCheck():
 @app.route('/api/eventInfo/events',methods=['GET'])
 def events():
   try:
-    year = int(request.args.get('year'))
+    year = int(request.args.get('year',int(currentYear)))
     schedule = fastf1.get_event_schedule(year)
 
     events = serializeData(df=schedule)
@@ -64,8 +65,8 @@ def events():
 @app.route('/api/eventInfo/spec-event',methods=['GET'])
 def specificEvent():
    try:
-      place = str(request.args.get('place'))
-      year = int(request.args.get('year'))
+      place = int(request.args.get('place'))
+      year = int(request.args.get('year',int(currentYear)))
 
       event = fastf1.get_event(year=year,gp=place)
 
@@ -125,7 +126,7 @@ def eventsRemaining():
 @app.route('/api/sessionInfo/driverStandings',methods=['GET'])
 def driverStandings():
   try:
-    year = int(request.args.get('year'))
+    year = int(request.args.get('year',int(currentYear)))
     track= str(request.args.get('track'))
     stype = str(request.args.get('stype'))
 
@@ -151,7 +152,7 @@ def driverStandings():
 @app.route('/api/raceControl',methods=['GET'])
 def raceControl():
    try:
-      year = int(request.args.get('year'))
+      year = int(request.args.get('year',int(currentYear)))
       track = str(request.args.get('track'))
       stype = str(request.args.get('stype'))
       session = fastf1.get_session(year,track,stype)

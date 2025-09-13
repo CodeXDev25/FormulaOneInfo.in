@@ -1,8 +1,10 @@
 import fastf1
 from datetime import datetime
 
+today = datetime.now()
+
 fastf1.Cache.enable_cache('f1_cache')
 
-session = fastf1.get_event_schedule(2023)
+schedule = fastf1.get_events_remaining(today)
 
-print(session)
+print(schedule)

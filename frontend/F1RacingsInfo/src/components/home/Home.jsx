@@ -1,14 +1,12 @@
 import React from "react";
+import axios from 'axios'
 import './Home.css'
 import './Main.css'
 import './Home-Schedule.css'
+import './backendDatafetchnUpdate'
 import F1Logo from '../../assets/logo.svg'
 import RArrow from '../../assets/home/RArrow.svg'
 import FOneImage from '../../assets/home/FOneCar.jpg'
-import monza from '../../assets/trackImages/jpg/monza.jpg'
-import baku from '../../assets/trackImages/jpg/baku.jpg'
-import miami from '../../assets/trackImages/jpg/miami.jpg'
-import montreal from '../../assets/trackImages/jpg/montrèal.jpg'
 
 const Home = () => {
   return(
@@ -43,11 +41,11 @@ const Home = () => {
             <div className="frame-1">
               <div className="frame-1-heading typography"><span>Previous</span></div>
               <div className="frame-1-image-div">
-                <img src={monza} alt="" className="frame-1-image"/>
+                <img src="" alt="No Internet" className="frame-1-image" id="js-frame-1-image"/>
                 <div className="frame-1-eventdetail">
-                  <div className="frame-1-roundno typography"><span>Round 16</span></div>
-                  <div className="frame-1-roundname typography"><span>Monza</span></div>
-                  <div className="frame-1-rounddate typography"><span>05 - 07 SEP</span></div>
+                  <div className="frame-1-roundno typography"><span>Round <span id="js-frame-1-roundno"></span></span></div>
+                  <div className="frame-1-roundname typography"><span id="js-frame-1-location"></span></div>
+                  <div className="frame-1-rounddate typography"><span><span id="js-frame-1-startdate"></span> - <span id="js-frame-1-enddate"></span> <span id="js-frame-1-month"></span></span></div>
                 </div>
               </div>
             </div>
@@ -55,11 +53,11 @@ const Home = () => {
             <div className="frame-2">
               <div className="frame-2-heading typography"><span>Next</span></div>
               <div className="frame-2-image-div">
-                <img src={baku} alt="" className="frame-2-image"/>
+                <img src="" alt="No Internet" className="frame-2-image" id="js-frame-2-image"/>
                 <div className="frame-2-eventdetail">
-                  <div className="frame-2-roundno typography"><span>Round 17</span></div>
-                  <div className="frame-2-roundname typography"><span>Baku</span></div>
-                  <div className="frame-2-rounddate typography"><span>19 - 21 SEP</span></div>
+                  <div className="frame-2-roundno typography"><span>Round <span id="js-frame-2-roundno"></span></span></div>
+                  <div className="frame-2-roundname typography"><span id="js-frame-2-location"></span></div>
+                  <div className="frame-2-rounddate typography"><span><span id="js-frame-2-startdate"></span> - <span id="js-frame-2-enddate"></span> <span id="js-frame-2-month"></span></span></div>
                 </div>
               </div>
             </div>
@@ -67,11 +65,11 @@ const Home = () => {
             <div className="frame-3">
               <div className="frame-3-heading typography"><span>Future</span></div>
               <div className="frame-3-image-div">
-                <img src={miami} alt="" className="frame-3-image-1"/>
+                <img src="" alt="No Internet" className="frame-3-image-1" id="js-frame-3-image"/>
                 <div className="frame-3-eventdetail-1">
-                  <div className="frame-3-roundno typography"><span>Round 17</span></div>
-                  <div className="frame-3-roundname typography"><span>Baku</span></div>
-                  <div className="frame-3-rounddate typography"><span>03 - 05 OCT</span></div>
+                  <div className="frame-3-roundno typography"><span>Round <span id="js-frame-3-roundno"></span></span></div>
+                  <div className="frame-3-roundname typography"><span id="js-frame-3-location"></span></div>
+                  <div className="frame-3-rounddate typography"><span><span id="js-frame-3-startdate"></span> - <span id="js-frame-3-enddate"></span> <span id="js-frame-3-month"></span></span></div>
                 </div>
               </div>
             </div>
@@ -102,7 +100,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="footer">
+        <div className="full-schedule">
           
         </div>
       </div>
